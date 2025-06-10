@@ -3,12 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thousand.js</title>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(48, 48, 48);
+            margin:0px;
+            font-family: 'Robot monospace', monospace;
+            font-size: 13px;
+        }
+        #panel {
+            padding: 10px;
+            width:200px;
+        } #panel h1{
+            color: rgb(116, 116, 240);
+            
+        } #sidenav ul {
+            list-style-type: none;  
+            margin: 0px;
+        }#sidenav a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }#content {
+            position: absolute;
+            left: 250px;
+            top:0px;
+            background-color: white;
+            
+        } #panelscren {
+        color: blue;
+        padding: 10px;
+        text-decoration: none;
+        } .borders {
+            border-bottom: 2px solid gray;
+            padding-bottom: 5px;
+            width: 220px;
+            margin: 0px;
+        } .box {
+            position: absolute;
+            left: 180px;
+            top: 30px;
+            border: 2px solid rgb(116, 116, 240);
+            color: rgb(116, 116, 240);
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 10px;
+        } #paneltitle {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Thousand</h1>
+    <div id="panel">
+        <div id="panelscren">
+            <a href="/" id="paneltitle"><h1>Thousand.js</h1></a>
+                <div class="box">
+                    <p>v1.1.7</p>
+                </div>
+            <div class="borders"></div>
+        </div>
+        <nav id="sidenav">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                 <li><h1>Play</h1></li>
+                 <li><a href="/editor/">EDIÇÃO</a></li>
+                  <li><a href="/playground/">Playground</a></li>
+                   <li><h1>Documentação</h1></li>
+                    <li><a href="/docs/">Docs</a></li>
+                    <li><h1>Code</h1></li>
+                    <li><a href="https://github.com/thousandjs/thousand.js">Github</a></li>
+            </ul>
+        </nav>
+    </div>
     <div id="content">
-        
+        <div id="pages">
+            <div id="game">
+                <div id="game1">
+                    <a><img><br>The circles</a>
+                    <a><img><br>Animation frames</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
